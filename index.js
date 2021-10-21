@@ -35,7 +35,8 @@ for (let i = 0; i < years.length; i++) {
 // let highest = valueArray[i];
 // for (i; i < valueArray.length; i++) {  
 //     if (valueArray[i] < lowest) {
-//         lowest = valueArray[i];    //     } else if (valueArray[i] > highest) {
+//         lowest = valueArray[i];
+//} else if (valueArray[i] > highest) {
 //         highest = valueArray[i];
 //     }
 // }
