@@ -16,25 +16,14 @@
 //----------------------------------------------------------------------------------------
 //2)      Create a function that returns sum of first and last elements of given array.
 
-// let array1 = [1, 6, 23, 8, 4, 8, 3, 7]
+let arr = [1, 6, 23, 8, 4, 8, 3, 7]
 
-// showSum = (array) => {
-//   let sum = 0
-//   for (let i = 0; i < array.length; i++) {
-//     if (i == 0) {
-//       sum = sum + array[i] // suma pierwszego elementu tablicy
-//     } else {
-//       if (i == [array.length - 1]) {
-//         sum = sum + array[i] // suma ostatniego elementu tablicy
-//       }
-//     }
-//   }
-//   console.log(
-//     'Task 2. Sum of the first and last element from ' + array + ' = ' + sum,
-//   )
-// }
+function sumOfFirstAndLastElementOfAnArray(array) {
+return array[0] + array[array.length - 1]
+}
 
-// showSum(array1)
+console.log(sumOfFirstAndLastElementOfAnArray(arr))
+
 //----------------------------------------------------------------------------------------
 // //3)      Create a function that takes a number and return factorial of that number.
 
