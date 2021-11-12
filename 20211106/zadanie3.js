@@ -18,4 +18,3 @@ for (let i = 0; i < array.length; i++){
     BaseObject.y=y
     console.log(BaseObject.sum());
 };        
-
