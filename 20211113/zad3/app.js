@@ -6,7 +6,6 @@ function spendIn2014(){
          var2014.forEach(element => { spendSum2014 = spendSum2014 + Number(element.cost)});
             return console.log('Sum of spend in 2014 is: ' + spendSum2014.toFixed(2));
             }(someObject);
-
 //spendIn2014();
 
 function companiesEarns(){
@@ -31,7 +30,6 @@ function companiesEarns(){
               }     
     return console.log('Companies earns: ' + resultCompaniesEarns); // (3) ['ECSTASIA: 15695.64', 'MANGELICA: 14855.67', 'CODAX: 19036.06']       
     }(someObject);
-    
  //companiesEarns();
 
 function transactionSpendings(){
@@ -56,8 +54,7 @@ function transactionSpendings(){
                   }     
         resultTypeSpends.sort(); 
         return console.log('Spends per type transaction: ' + resultTypeSpends); 
-}(someObject);
-        
+}(someObject);    
 //transactionSpendings();
 
 function spendingsByMonth(){                    
@@ -82,7 +79,7 @@ function spendingsByMonth(){                    
             resultMonthSpends.sort(); 
             return console.log('Spends per month: ' + resultMonthSpends);                   
     }(someObject);                              
-   // spendingsByMonth(); 
+ // spendingsByMonth(); 
 
 function spendingsInEachDayofTheWeek(){
     let days = [0,1,2,3,4,5,6];                    
@@ -95,12 +92,12 @@ function spendingsInEachDayofTheWeek(){
 let sum = 0                                         
 for(let a = 0; a < days.length; a++){ // for each day
      for(let b = 0; b < someObject.length; b++){ // sum of spend for each day, checking all transactions                                       
-currentDate = someObject[b].detailsOfPayent.date.split("-");
-day = currentDate[0];
-month = currentDate[1];
-year = currentDate[2];
-dateResult = new Date(year, month-1, day);
-dateResult.getDay();
+                currentDate = someObject[b].detailsOfPayent.date.split("-");
+                day = currentDate[0];
+                month = currentDate[1];
+                year = currentDate[2];
+                dateResult = new Date(year, month-1, day);
+                dateResult.getDay();
         if(days[a] === dateResult.getDay()){                                        
                 sum = sum + Number(someObject[b].cost)                                          
                                          };                                         
