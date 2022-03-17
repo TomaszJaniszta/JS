@@ -7,27 +7,56 @@ class Translator {
         return this.transaleMethod(this.textToBeTranslated);
     }
 }
+
 class Transalions {
-    static ToPigLatin(text) {
-        let translatedText;
-        translatedText = text.split(" ").map(x => this.WordToPigLatin(x));
-        return translatedText.concat(" ");
+    ToPigLatin(text) {
+        let translatedText = text.split(" ");
+        let newTextToPigLatin = [];
+
+        translatedText.forEach((e) => {
+            let newText = e.split('');
+            let oneLetter = newText.shift();
+            let newWordToPigLatin = newText.join('') + oneLetter + 'ay';
+            newTextToPigLatin.push(newWordToPigLatin)
+        });
+
+        newTextToPigLatin = newTextToPigLatin.join(' ');
+        // return word after modification
+        return newTextToPigLatin;
     }
-    static WordToPigLatin(wordToBeTranslated) {
-        let wordModification = () => wordToBeTranslated + 'ay';
-        return wordModification
+
+    ReverseToPigLatin(text) {
+        let translatedText = text.split(" ");
+        let reversedTextToPigLatin = [];
+
+        translatedText.forEach((e) => {
+            let newText = e.split('');
+            // usuwam 2 ostatnie znaki
+            newText.pop();
+            newText.pop();
+            // biorę 3 ostatni znak by przesunąć na początek
+            let oneLetter = newText.pop();
+            let wordReverseFromPigLatin = oneLetter + newText.join('');
+            reversedTextToPigLatin.push(wordReverseFromPigLatin)
+        });
+        reversedTextToPigLatin = reversedTextToPigLatin.join(' ');
+        // return word after modification
+        return reversedTextToPigLatin;
     }
-    // static ReverseToPigLatin(text) {
-    //     let translatedText;
-    //     translatedText = text.split(" ").map(x => this.ReverseWordToPigLatin(x));
-    //     return translatedText.concat(" ");
-    // }
-    // static ReverseWordToPigLatin(wordToBeTranslated) {
-    //     // modyfikacje słowa
-    //     // return word after modification
-    // }
 }
-let translatorToPigLatin = new Translator('The quick brown fox', Transalions.ToPigLatin);
+
+let Translations = new Transalions();
+
+let translatorToPigLatin = new Translator(
+    'The quick brown fox',
+    Translations.ToPigLatin
+);
 let translationResult = translatorToPigLatin.Translate();
 console.log(translationResult);
-// let reverseTranslatorToPigLatin = new Translator(translationResult, Transalions.ReverseToPigLatin);
+
+let reverseTranslatorToPigLatin = new Translator(
+    translationResult,
+    Translations.ReverseToPigLatin
+);
+let reverseResult = reverseTranslatorToPigLatin.Translate();
+console.log(reverseResult);
