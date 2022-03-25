@@ -26,7 +26,7 @@ const morseCode = [
       {english: 'X', morse: '-..-'},
       {english: 'Y', morse: '-.--'},
       {english: 'Z', morse: '--..'},
-      {english: ' ', morse: ' '}
+      {english: ' ', morse: ' '}
     ];
       
     class Translator {
@@ -62,7 +62,7 @@ const morseCode = [
   let Translations = new Transalions();
      
   let translatorToMorse = new Translator(
-    'test test',
+    'test test test',
     Translations.ToMorse
   );
   console.log(translatorToMorse.Translate());
