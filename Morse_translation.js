@@ -1,5 +1,4 @@
-const { stringify } = require("querystring");
-
+// 1)      Write a program that automatically converts English text to Morse code and vice versa.
 const morseCode = [
       {english: 'A', morse: '.-'},
       {english: 'B', morse: '-...'},
