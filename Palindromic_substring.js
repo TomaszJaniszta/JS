@@ -1,72 +1,56 @@
 class PalindromClass {
-     constructor(textToBeChecked, palindromicMethod) {
-       this.textToBeChecked = textToBeChecked;
-       this.palindromicMethod = palindromicMethod;
-     }
-     writePalindromicSubstring() {
-       return this.palindromicMethod(this.textToBeChecked);
-     }
-   }
-   
-   class PalindromMethod {
-     checkText(text) {
-       let testPalindromicText = [];
-       let textArray = text.split('');
-       for (let i = 1; i < textArray.length; i++) {
-         if (
-           textArray[i - 1] === textArray[i + 1] &&
-           textArray[i - 2] === textArray[i + 2]
-         ) {
-           testPalindromicText = [
-             textArray[i - 2],
-             textArray[i - 1],
-             textArray[i],
-             textArray[i + 1],
-             textArray[i + 2],
-           ];
-           return testPalindromicText.join('');
-         }
-   
-         if (
-           textArray[i - 1] === textArray[i + 2] &&
-           textArray[i] === textArray[i + 1]
-         ) {
-           testPalindromicText = [
-             textArray[i - 1],
-             textArray[i],
-             textArray[i + 1],
-             textArray[i + 2],
-           ];
-           return testPalindromicText.join('');
-         }
-   
-         if (textArray[i - 1] === textArray[i + 1]) {
-           testPalindromicText = [
-             textArray[i - 1],
-             textArray[i],
-             textArray[i + 1],
-           ];
-           return testPalindromicText.join('');
-         }
-   
-         if (textArray[i - 1] === textArray[i]) {
-           testPalindromicText = [textArray[i - 1], textArray[i]];
-           return testPalindromicText.join('');
-         }
-   
-       }
-     }
-   }
-   
-   let checkPalindrom = new PalindromMethod();
-   
-   // ‘karakis’, ‘baerren’, ‘kajak’, ‘inni’,’sedes’
-   let newPalindrom = new PalindromClass('inniaaa', checkPalindrom.checkText);
-   let result = newPalindrom.writePalindromicSubstring();
-   
-   if (result == undefined) {
-     console.log('Palindromic substring not available');
-   } else {
-     console.log(newPalindrom.writePalindromicSubstring());
-   }
-   
+  constructor(textToBeChecked, palindromicMethod) {
+    this.textToBeChecked = textToBeChecked;
+    this.palindromicMethod = palindromicMethod;
+  }
+  writePalindromicSubstring() {
+    return this.palindromicMethod(this.textToBeChecked);
+    }
+  }
+    
+class PalindromMethod {
+  checkText(textToCheck) {
+    let palindromicSubstring = [ ];
+
+    let extendPalindromicSubstring = (text, left, right) => {
+      while (text[left - 1] && text[right + 1] && text[left - 1] === text[right + 1]) {
+        right = right + 1;
+        left = left - 1;
+      };
+      let temp = text.slice(left, right + 1);
+      if (palindromicSubstring.length < temp.length) { palindromicSubstring = temp };
+    };
+
+    let startChecking = (someWord) => {
+      let text = someWord.split('');
+      for (let i = 0; i < text.length; i++) {
+        let right = Number(i);
+        let left = Number(i); // for odd palindromic
+        extendPalindromicSubstring(text, left, right);
+        right = Number(i);
+        left = Number(i) -1; // for even palindromic
+        extendPalindromicSubstring(text, left, right);
+      };
+    };
+
+    startChecking(textToCheck);
+    return palindromicSubstring.join('');
+  };
+};
+
+let checkPalindrom = new PalindromMethod();
+
+let newPalindrom = new PalindromClass('karakis', checkPalindrom.checkText);
+console.log(newPalindrom.writePalindromicSubstring());
+
+newPalindrom = new PalindromClass('baerren', checkPalindrom.checkText);
+console.log(newPalindrom.writePalindromicSubstring());
+
+newPalindrom = new PalindromClass('kajak', checkPalindrom.checkText);
+console.log(newPalindrom.writePalindromicSubstring());
+
+newPalindrom = new PalindromClass('inni', checkPalindrom.checkText);
+console.log(newPalindrom.writePalindromicSubstring());
+
+newPalindrom = new PalindromClass('sedes', checkPalindrom.checkText);
+console.log(newPalindrom.writePalindromicSubstring());
