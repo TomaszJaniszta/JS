@@ -28,4 +28,11 @@
 21. Function that tells how many days till Friday
 22. Function that take two numbers and return the object with 4 fields. Result on 4 basic arithmetic operations
 
+
+23. Iffe that returns an object with fields: function setValue(), function showValue() and function reverseValue(). Calling functions either logs the value or reverse it in an object. If value was not provided yet or is empty showValue function is to return information about that. Value can be type string or number. reverseValue():  If number do (*(-1)), if string reverse it.  Closure pattern.
+
+24. Four function definitions. One for each basic math operation and taking two input parameters. Additional one that returns a calculated object containing the parameters object field (which contains two operation parameters inside (x and y)), and a function field (pointing to a function with a mathematical operation defined at the beginning). The setOperation () function sets a field and a computation function () that performs computations and returns a value
+
+25. Array of objects and sum() function in context of each one of them. Sum function from this object  	
+
 Description in progress...
