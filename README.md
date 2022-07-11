@@ -1,6 +1,7 @@
 # JavaScript
 
 #Mini tasks 1-9 (uncomment appropriate to run)
+
 1. Checking for leap years for years in array
 2. Calculate factorial of 7
 3. Calculate the sum of the odd items from array
@@ -12,6 +13,7 @@
 9. With a given start value of 0. Iterate the array and add even items and subtract odd ones
 
 #Mini tasks 10-22 (uncomment appropriate to run)
+
 10. Function that returns the sum of all elements passed in array as parameter. Function (array)=>number
 11. Function that returns sum of first and last elements of given array
 12. Function that takes a number and return factorial of that number
