@@ -35,4 +35,18 @@
 
 25. Array of objects and sum() function in context of each one of them. Sum function from this object  	
 
+26 Reversed string function
+
+27 Reversed number and sum function
+
+28 Based on included JSON file. Returned Json from the file. Created a structures to hold data from the file. Created object that giving data about:
+
+ - How much money was spend in 2014
+ - What company was earning how much
+ - What type on transaction was having what spending’s.
+ - Values of the spending in each month
+ - Values of the spending in each day of the week
+ - 
+29 Tasks set I: 1.Prime_numbers, 2.Guessing_game, 3.Rotate_elements, 4.Fibonacci_numbers, 5.Only_digits, 6.Text_to_pig_latin
+
 Description in progress...
