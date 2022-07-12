@@ -2,7 +2,7 @@
 
 1.Balls
 
-7 balls weight is =1 and one weight is =2. 8 balls = [1,2,1,1,1,1,1,1]. Balls are to be chosen at random. Find the position of heaviest ball using comparing of weights only two times.  
+  7 balls weight is =1 and one weight is =2. 8 balls = [1,2,1,1,1,1,1,1]. Balls are to be chosen at random. Find the position of heaviest ball using comparing of weights only two times.  
 
 2.JosephusProblem - result of Josephus problem for 7 soldiers (history riddle). 
 
@@ -35,6 +35,3 @@
 	Program that tell us what poker set we have. Deal us 5 random cards from the standard 52 card deck. After that program tell us what is the best poker set
 
 10.Sudoku solution for given tabel
-
-
-
