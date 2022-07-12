@@ -36,11 +36,11 @@
 
 25. Array of objects and sum() function in context of each one of them. Sum function from this object  	
 
-26 Reversed string function
+26. Reversed string function
 
-27 Reversed number and sum function
+27. Reversed number and sum function
 
-28 Based on included JSON file. Returned Json from the file. Created a structures to hold data from the file. Created object that giving data about:
+28. Based on included JSON file. Returned Json from the file. Created a structures to hold data from the file. Created object that giving data about:
 
  - How much money was spend in 2014
  - What company was earning how much
@@ -49,6 +49,6 @@
  - Values of the spending in each day of the week
  
 --------------------------------------------------------------------------------------------------------------------------------------
-29 Tasks set I: 1.Prime_numbers, 2.Guessing_game, 3.Rotate_elements, 4.Fibonacci_numbers, 5.Only_digits, 6.Text_to_pig_latin
+29. Tasks set I: 1.Prime_numbers, 2.Guessing_game, 3.Rotate_elements, 4.Fibonacci_numbers, 5.Only_digits, 6.Text_to_pig_latin
 
-30 Tasks set II: 1.Balls, 2.JosephusProblem, 3.Longest_common_subsequence, 4 and 5 - 4.Morse_translation and 5.Morse_translation2, 6.Text to pig latin, 7.Multiplies two matrices together, 8.Palindromic substring, 9.Poker symulation 10. Sudoku solution
+30. Tasks set II: 1.Balls, 2.JosephusProblem, 3.Longest_common_subsequence, 4 and 5 - 4.Morse_translation and 5.Morse_translation2, 6.Text to pig latin, 7.Multiplies two matrices together, 8.Palindromic substring, 9.Poker symulation 10. Sudoku solution
