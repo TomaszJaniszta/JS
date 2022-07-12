@@ -11,6 +11,7 @@
 7. Calculate average value from the given array for even numbers
 8. Calculate average value of items at even indexes. Zero is not considered to be even number
 9. With a given start value of 0. Iterate the array and add even items and subtract odd ones
+--------------------------------------------------------------------------------------------------------------------------------------
 
 #Mini tasks 10-22 (uncomment appropriate to run)
 
@@ -46,7 +47,8 @@
  - What type on transaction was having what spending’s.
  - Values of the spending in each month
  - Values of the spending in each day of the week
- - 
+ 
+--------------------------------------------------------------------------------------------------------------------------------------
 29 Tasks set I: 1.Prime_numbers, 2.Guessing_game, 3.Rotate_elements, 4.Fibonacci_numbers, 5.Only_digits, 6.Text_to_pig_latin
 
-Description in progress...
+30 Tasks set II: 1.Balls, 2.JosephusProblem, 3.Longest_common_subsequence, 4 and 5 - 4.Morse_translation and 5.Morse_translation2, 6.Text to pig latin, 7.Multiplies two matrices together, 8.Palindromic substring, 9.Poker symulation 10. Sudoku solution
